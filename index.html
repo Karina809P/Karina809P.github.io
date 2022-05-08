@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Курси</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+   <header class="header">
+     <nav class=" nav-bar secondary-text">
+       <div class="nav-bar-wrapper">
+         <div class="nav-logo-wrapper">
+           <img src="../img/Group 1.png"  id= "logo.img" alt class=" nav-logo">
+         </div>
+         <div class="nav-menu-wrapper">
+           <span class="nav-menu-item">Про нас</span>
+           <span class="nav-menu-item">Новини</span>
+           <span class="nav-menu-item">Блог</span>
+           <i class="nav-menu-icon" ></i>
+         </div>
+         <div class="menu-button">
+
+         </div>
+       </div>
+     </nav>
+   </header>
+   <section class="secition-outer">
+     <div class="section-inner">
+       <div class="into-box">
+         <h2 class="name" id="text-to-change">Опис курсу JavaScript</h2>
+         <h3 id="text1">JavaScript ("джаваскрипт") - це скриптова мова програмування, яка використовується у створенні клієнтської сторони веб-сайту з метою "оживлення" сторінки і додавання їй інтерактивності. Також її застосовують на серверній стороні для роботи з базою даних та програмною логікою. Настільки широка сфера використання цієї мови говорить про її затребуваність на IT-ринку.  </h3>
+         <div class="info-box_items">
+          <div class="info-box__item">
+            <img class="image-content" src="./img/Js Squared.png" alt>
+            <div >
+              <p class="text">Тривалість:</p>
+              <p class="bold-text"id="text2">17 годин</p>
+            </div>
+          </div>
+           <div class="info-box__item">
+             <img class="image-content" src="./img/Read Online.png" alt>
+             <div >
+               <p class="text">Кількість уроків:</p>
+               <p class="bold-text"id="text3">8 занять</p>
+             </div>
+           </div>
+           <div class="info-box__item">
+             <img class="image-content" src="./img/Euro Money.png" alt>
+             <div id=>
+               <p class="text">Вартість:</p>
+               <p class="bold-text"id="text4">250€</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="form_">
+         <form action="submit">
+           <div class="form-wrapper">
+             <div class="title">
+               <h2 class="form__title">Запис на курс</h2>
+             </div>
+             <div class="registration-form ">
+               <div class="input-box">
+                <label class="form-label" for="name">Імʼя</label>
+                <input type="text" id="name" class="form-input" placeholder="Введіть імʼя" required>
+                <label class="form-label" for="surname">Прізвище</label>
+                <input type="text" id="surname" class="form-input" placeholder="Введіть прізвище" required>
+                <label class="form-label" for="phone">Телефон</label>
+                <input type="text" id="phone" class="form-input" placeholder="+38 (0__) ___ ____" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>  
+               </div>
+               <div class="input-box">
+                <label class="form-label" for="select-education-form">Форма навчання</label>
+                <select class="form-input form-input-select" name id="select-education-form" required>
+                  <option value="Online">Online</option>
+                  <option value="Offline">Offline</option>
+                </select>
+                <label class="form-label" for="email">E-mail</label>
+                <input type="text" id="email" class="form-input" placeholder="Введіть E-mail">
+                <label class="form-label" for="select-name-course">Назва курсу</label>
+                <select class="form-input form-input-select" name id="select-name-course" required>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="Java">Java</option>
+                  <option value="C++">C++</option>
+                </select>
+               </div>
+             </div>
+             <div class="form-buttonpl">
+               <a href="#">
+                 <span>Зареєструватися</span>
+                 <div class="liquid"></div>
+               </a>
+             </div>
+           </div>
+         </form>
+       </div>
+     </div>
+   </section>
+   <footer class="footer secondary-text">
+     <span class="footer-credentials"> © 2022 My Space. Всі права захищені. </span>
+   </footer>
+  </body>
+</html>
